@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+    }
+
+body {
+    font-family: monospace;
+    background-color: #373a48;
+    color: #ffff;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;    
+    line-height: 1.5em !important;
+    
+}
+
+header {
+    background: #2f313c;
+    color: white;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    
+}
+
+nav ul li :hover{
+    color: #d1d1d1;
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#portfolio {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+
+#portfolio p {
+    line-height: 1.5em;
+}
+
+
+.e2ftech-link {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.e2ftech-link:hover {
+    color: #d1d1d1;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    max-width: 1000px;
+    gap: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.portfolio-item img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+    filter: blur(5px);
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+    
+    }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(55, 58, 72, 0.8); 
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    backdrop-filter: blur(8px); /* Aplica un blur a la capa */
+}
+
+
+.btn a {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #4a6fa5; 
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+
+    
+}
+
+.btn a:hover {
+    background-color: #6b8ebe; 
+}
+
+#contact {
+    text-align: center; 
+}
+
+#contact a {
+    display: inline-block; /* Permite transformaciones */
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin: 10px 10px; /* Espaciado entre enlaces */
+    transition: transform 0.2s ease, opacity 0.3s ease; 
+}
+
+#contact i {
+    margin-right: 8px;
+    font-size: 34px;
+    transition: color 0.3s ease; 
+}
+
+/* Colores íconos */
+#contact i.fa-linkedin { color: #0077b5; }
+#contact i.fa-square-behance { color: #1769FF; }
+#contact i.fa-envelope { color: #D44638; }
+#contact i.fa-whatsapp { color: #25D366; }
+#contact i.fa-instagram { color: #E4405F; }
+
+/* Efecto hover: eleva y cambia opacidad */
+#contact a:hover {
+    transform: translateY(-3px); /* Eleva ligeramente */
+}
+
+/* Cambiar color hover */
+#contact a:hover i.fa-linkedin { color: #005582; } 
+#contact a:hover i.fa-envelope { color: #b23121; } 
+#contact a:hover i.fa-whatsapp { color: #1ebe52; } 
+#contact a:hover i.fa-instagram { color: #c13584; } 
+#contact a:hover i.fa-square-behance { color: #0E52CC; }
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2f313c;
+    color: #ffff;
+    margin-top: 20px;
+    }
